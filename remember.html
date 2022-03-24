@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <title>Make a Note - Anubhav</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/note.css" />
+  </head>
+  <script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/61e11f71b84f7301d32af52d/1fpbm5le3';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+    <!--End of Tawk.to Script-->
+  <body oncontextmenu = "return false;">
+    <div id="preloader"></div>
+
+    <button class="add" id="add"><i class="fas fa-plus"></i> Add one</button>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/marked/2.1.3/marked.min.js"
+      integrity="sha512-AD+GG1nJKO4Je/Q8QsY1gM9/7o1QjpGe9W2Lrg1oGtEID/RX8bMKKZGgw/KOODkPXL6j74c6eJWAhE/3F2kKjA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script type="text/javascript" src="scriptn.js"></script>
+    <script>
+      document.onkeydown = function(e){
+        if(e.keyCode === 123){
+          return false;
+        }
+        if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)){
+          return false;
+        }
+        if(e.ctrlKey && e.shiftKey && e.keyCode == "J".charCodeAt(0)){
+          return false;
+        }
+        if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)){
+          return false;
+        }
+      }
+    </script>
+    <script>
+      document.addEventListener(
+        "DOMContentLoaded",
+        function () {
+          setTimeout(function () {
+            document.getElementById("loading").className = "slideDown";
+          }, 3800);
+        },
+        false
+      );
+
+      document.addEventListener(
+        "DOMContentLoaded",
+        function () {
+          setTimeout(function () {
+            document.getElementById("loading-center").className = "zoomOut";
+          }, 3200);
+        },
+        false
+      );
+
+      document.addEventListener(
+        "DOMContentLoaded",
+        function () {
+          setTimeout(function () {
+            document.getElementById("block-1").className = "slideInUp";
+          }, 3800);
+        },
+        false
+      );
+    </script>
+    <script>
+      let loader = document.getElementById("preloader");
+      window.addEventListener("load", function () {
+        loader.style.display = "none";
+      });
+    </script>
+  </body>
+</html>

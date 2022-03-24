@@ -1,0 +1,487 @@
+:root{
+	--mont:'Montserrat',sans-serif;
+	--sans:'Open Sans' , sans-serif;
+	--green : #ffa600;
+	--black: #111;
+	--nero:#252525;
+	--transition:all 0.4s ease;
+}
+*{
+	box-sizing: border-box;
+}
+body
+{
+	background: var(--black);
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0;
+	padding-top: 3rem;
+}
+.add{
+	position:fixed;
+	top: 1rem;
+	right: 1rem;
+	background-color:var(--green);
+	color: #fff;
+	border: none;
+	border-radius:3px;
+	padding: 0.5rem 1rem;
+	cursor: pointer;
+}
+
+.note{
+	background-color: #fff;
+    box-shadow: 0 0 10px 4px rgba(0,0,0,0.1);
+    margin: 30px 20px ;
+	height: 400px;
+	width: 400px ;
+
+ 
+}
+
+.note .tools{
+	background-color: var(--green);
+	display: flex;
+	justify-content: flex-end;
+	padding: 0.5rem;
+
+
+}
+
+.note .tools button{
+	background-color: transparent;
+	border: none;
+	color: #fff;
+	cursor: pointer;
+	font-size:  1rem;
+	margin-left: 0.5rem;
+
+}
+
+.note textarea{
+	outline:none;
+	font-family: inherit;
+	font-size:  1.2rem;
+	border: none;
+	height: 400px;
+	width: 100%;
+	padding: 20px;
+}
+ .hidden{
+	display: none;
+}
+.main{
+	padding: 20px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:1.1rem;
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+     -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  
+  .res-container {
+      width: 100%;
+    position: absoulte;
+    margin-bottom: 0;
+  }
+  
+  .res-row {
+    display: -webkit-box;
+    /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;
+    /* OLD - Firefox 19 */
+    display: -ms-flexbox;
+    /* TWEENER - IE 10 */
+    display: -webkit-flex;
+    /* NEW - Chrome */
+    display: flex;
+    /* NEW - Opera 12.1, Firefox 20+ */
+  }
+  #box {
+    -webkit-box-flex: 1;
+    /* OLD - iOS 6-, Safari 3.1-6 */
+    -moz-box-flex: 1;
+    /* OLD - Firefox 19- */
+    -webkit-flex: 1;
+    /* Chrome */
+    -ms-flex: 1;
+    /* IE 10 */
+    flex: 1;
+    width: 100%;
+    /* Old syntax, otherwise collapses. */
+    
+  }
+  /*...................*/
+  #block-1 {
+    animation-duration: 1s;	
+      -webkit-animation-duration: 1s;
+  animation-iteration-count: 1;
+      animation-timing-function: ease;	
+      -webkit-animation-timing-function: ease;	
+  }
+  
+  .b3 {
+    position: fixed; 
+  }
+  
+  /*****************/
+  #loader-wrap {
+      display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+  }
+  #loading {
+  background-color: var(--black);
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 2;
+  margin-top: 0px;
+  top: 0px;
+  }
+  
+  /***************/
+  #loading-center{
+      width: 100%;
+      height: 100%;
+      position: relative;
+  }
+  #loading-center-absolute {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      height: 200px;
+      width: 200px;
+      margin-top: -100px;
+      margin-left: -100px;
+  }
+  #object{
+      width: 200px;
+      height: 200px;
+    Background-image: url(https://reech.ca/wp-content/uploads/2017/09/reech-logo-no-text.svg);
+    background-repeat: no-repeat;
+    margin-right: auto;
+      margin-left: auto;
+      margin-top: 20px;
+  }
+  
+  /***************************/
+  
+  #object {
+    animation: object .8s linear;
+    transform-origin: center center;
+  }
+  @keyframes object {
+    0%{transform: scale(0); opacity: 0}
+    50%{transform: scale(1.5); opacity: 1}
+    100% {transform: scale(1); opacity:1}
+  }
+  
+  /*********loader line******************/
+  #loader {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -50px;
+    width: 100px;
+    height: 3px;
+    overflow: hidden;
+  }
+  #loader:before, #loader:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 3px;
+    transform: translate(-100%, 0);
+  }
+  #loader:before {
+    background-color: var(--nero);
+    animation: loading 3400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  #loader:after {
+    background-color: #fff;
+    animation: loading 2500ms 500ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  
+  @keyframes loading {
+    75% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(100%, 0);
+    }
+  }
+  
+  
+  /***********************/
+  
+  /*************************/
+  #hero-box {
+    position: relative;
+    height: 100%;
+    width: 80%;
+  }
+  
+  .bg {
+    position: absolute;
+      background-image: url(https://www.jeans.ch/out/pictures/generated/product/1/310_412_75/sol_fred-perry-white-men-shirt-m8272-200_f_1.png) !important;
+      background-size: cover !important;
+      background-position: center;
+      z-index: 1 !important;
+      width: 30vw;
+      height: 100vh;
+      left: 12%;
+  }
+  .overlay {
+     position: absolute;
+      background-image: url(https://reech.ca/wp-content/uploads/2017/10/xnado-pattern-white.svg) !important;
+      background-repeat: repeat;
+      background-size: contain !important;
+      height: 50vh;
+      width: 38vw;
+      margin-left: 12%;
+      top: 30%;
+    
+  }
+  
+  
+  /*.......................*/
+  #header-wrap {
+        position: absolute;
+        width: 80px;
+      height: 3px;
+      top: 45%;
+      left: 49.5%;
+  }
+  #header {
+        position: relative;
+      font-family: 'Roboto', sans-serif;
+      color: #1c1c1c;
+      line-height: 100%;
+      overflow: hidden;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+        font-weight: 700;
+  }
+  #header-o {
+        position: relative;
+      font-family: 'Roboto', sans-serif;
+      color: #1c1c1c;
+      line-height: 100%;
+      overflow: hidden;
+    text-transform: uppercase;
+    margin-left: -5%;
+       font-weight: 700;
+    font-size: 1rem;
+        top: -4px;
+  }
+  #header-o:after {
+      content: "";
+      position: absolute;
+      left: 1px;
+      right: 1px;
+      background: #1c1c1c;
+      height: 2.5px;
+      bottom: -1px;
+    
+  }
+  #header-0 {
+        position: relative;
+      font-family: 'Roboto', sans-serif;
+      color: #1c1c1c;
+      line-height: 100%;
+      overflow: hidden;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    margin-left: -4%;
+        font-weight: 700;
+  }
+  #header-1 {
+        position: relative;
+      font-family: 'Roboto', sans-serif;
+      color: #1c1c1c;
+      line-height: 100%;
+      overflow: hidden;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    margin-left: -7%;
+        font-weight: 700;
+  }
+  
+  #left-line {
+     width: 60px;
+    height: 2px;
+    display: block;
+    background-color: #1c1c1c;
+    position: absolute;
+    margin-top: -16%;
+    left: -90%;
+  }
+  
+  /**************************/
+  
+  
+  #hero-text {
+      position: absolute;
+      top: 56%;
+      left: 44%;
+      font-size: 5rem;
+      color: #1c1c1c;
+      font-weight: 700;
+      letter-spacing: 1px;
+      line-height: 1px;
+      text-transform: uppercase;
+      font-family: 'Oswald', sans-serif;
+    z-index: 1 !important;
+    opacity: 1;
+    
+  }
+  
+  #s-txt {
+          position: absolute;
+      bottom: 12%;
+     right: -1%;
+      font-size: 0.6rem;
+      color: #1c1c1c;
+      font-weight: 300;
+      letter-spacing: 0.4em;
+      line-height: 1em;
+      text-transform: uppercase;
+      font-family: 'Oswald', sans-serif;
+      z-index: 1 !important;
+      opacity: 1;
+      
+    -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  
+  }
+  #lg-ltrs {
+       position: absolute;
+      left: 0%;
+      bottom: -16%;
+      margin-left: -3%;
+      font-size: 10rem;
+      color: #fc5252;
+      font-weight: 900;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      font-family: 'Open Sans', sans-serif;
+      z-index: 1 !important;
+      opacity: 1;
+      
+    -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  
+  }
+  
+  /***********SLIDE DOWN***************/
+  
+  .slideDown {
+      bottom: 0 !important;
+     animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+  }
+  
+  .slideDown {
+      animation-name: slideDown;
+      -webkit-animation-name: slideDown;	
+  
+      animation-duration: 1s;	
+      -webkit-animation-duration: 1s;
+  animation-iteration-count: 1;
+      animation-timing-function: ease;	
+      -webkit-animation-timing-function: ease;	
+      visibility: visible !important;						
+  }
+  
+  @keyframes slideDown {
+    from {
+      transform: translateY(0%);
+    }
+    to {
+      transform: translateY(100%);
+    }
+  }
+  
+  @-webkit-keyframes slideDown {
+        from {
+      transform: translateY(0%);
+    }
+    to {
+      transform: translateY(100%);
+    }
+  }
+  
+  /*********************/
+  
+  .slideInUp {
+      animation-name: slideInUp;
+      -webkit-animation-name: slideInUp;	
+  
+      animation-duration: 1s;	
+      -webkit-animation-duration: 1s;
+  animation-iteration-count: 1;
+      animation-timing-function: ease-in;	
+      -webkit-animation-timing-function: ease-in;	
+      visibility: visible !important;						
+  }
+  
+  @keyframes slideInUp {
+    from {
+      transform: translateY(100%);
+    }
+    to {
+      transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slideInUp {
+    from {
+      transform: translateY(100%);
+    }
+    to {
+      transform: translateY(0%);
+    }
+  }
+  
+  @keyframes zoomOut {
+    from {
+      opacity: 1;
+    }
+  
+    50% {
+      opacity: 0;
+      transform: scale3d(.3, .3, .3);
+    }
+  
+    to {
+      opacity: 0;
+    }
+  }
+  
+  .zoomOut {
+    animation-name: zoomOut;
+    
+     animation-name: zoomOut;
+      -webkit-animation-name: zoomOut;	
+  
+      animation-duration: 2s;	
+      -webkit-animation-duration: 2s;
+  animation-iteration-count: 2;
+      animation-timing-function: ease-in-out;	
+      -webkit-animation-timing-function: ease-in-out;	
+      visibility: visible !important;
+  }
