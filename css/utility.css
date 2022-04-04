@@ -2,7 +2,7 @@
  :root{
      --mont:'Montserrat',sans-serif;
      --sans:'Comfortaa', cursive;
-     --green :#ffa600;
+     --green :#04c5c5;
      --black: rgb(0, 0, 0);
      --nero:#292929;
      --transition:all 0.4s ease;
@@ -26,15 +26,15 @@
 }
 ::selection {
   color: #fff;
-  background: #ffa600;
+  background: var(--green);
 }
 ::-webkit-selection{
   color: #fff;
-  background: #ffa600;
+  background: var(--green);
 }
 ::-moz-selection{
   color: #fff;
-  background: #ffa600;
+  background: var(--green);
 }
 
 ::-webkit-scrollbar {
