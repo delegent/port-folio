@@ -3,7 +3,7 @@
      --mont:'Montserrat',sans-serif;
      --sans:'Comfortaa', cursive;
      --green :#04c5c5;
-     --black: rgb(0, 0, 0);
+     --black: #020008;
      --nero:#292929;
      --transition:all 0.4s ease;
      --heading:rgb(138, 118, 118);
@@ -16,6 +16,9 @@
      padding:0;
      margin: 0;
      font-family: var(--sans);
+ }
+ html{
+   scroll-behavior: smooth;
  }
  body{
      color: var(--white);
