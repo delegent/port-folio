@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400&display=swap');
  :root{
-     --mont:'Montserrat',sans-serif;
-     --sans:'Comfortaa', cursive;
-     --green :#04c5c5;
+     --mont:'Red Hat Display',sans-serif;
+     --sans:'Red Hat Display', sans-serif;
+     --green :#1CA455;
      --black: #020008;
      --nero:#292929;
      --transition:all 0.4s ease;

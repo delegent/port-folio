@@ -16,12 +16,12 @@ window.addEventListener('resize',()=>{
 let img = document.getElementById('home-img');
 img.addEventListener('mouseover',function(){
     
-        img.src = "images/colour.jpg"
+        img.src = "images/mmm.svg"
     
 })
 img.addEventListener('mouseout',function(){
     
-    img.src = "images/colour.jpg"
+    img.src = "images/mmm.svg"
 
 })
 //about

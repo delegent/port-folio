@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400&display=swap');
 #preloader{
     background:#000000 url('https://cdn.dribbble.com/users/42176/screenshots/4709515/kf_1-9-2_simple-loading-boxes.gif') no-repeat center center;
     background-size:30%;
@@ -16,14 +16,24 @@
     }
 }
 
+body{
+    letter-spacing:1.3px;
+}
 
 .navbar{
     position: fixed;
     z-index: 999;
-    top: 0;
+    top: -1;
     left: 0;
-    background: var(--nero);
+    
+    transition: all 1s ease;
+    /* filter: blur(5px); */
     width: 100%;
+}
+nav.sticky{
+    /* padding: 5px 100px;  */
+    backdrop-filter: blur(6px);
+    color: #fff;
 }
 .brand-and-toggler{
     display: flex;
@@ -31,10 +41,13 @@
     padding: 1rem 0;
 }
 .navbar-brand{
-    text-transform: uppercase;
-    font-family: var(--mont);
-    font-size: 1.7rem;
-    font-weight:800;
+    /* text-transform: uppercase; */
+    font-family: "Red Hat Display", sans-serif;
+    font-size: 1.8rem;
+    font-weight:500;
+}
+.navbar-brand  > span{
+    color:var(--green);
 }
 .navbar-toggler{
     border: none;
@@ -60,7 +73,11 @@
     letter-spacing: 1.2px;
     font-weight: 600;
 }
-
+@media  (min-width:200px) and (max-width:992px){
+    .navbar{
+        background: #111;
+    }     
+}
 .nav-item::after{
     content:"";
     position: absolute;
@@ -79,8 +96,10 @@
 }
 .nav-link{
     text-transform: uppercase;
-    font-size: 1.2rem;
+    font-size: 12px;
     transition: var(--transition);
+    font-family: "Red Hat Display", sans-serif;
+    letter-spacing: 1.9px;
 }
 .nav-link:hover{
     color: var(--green);
@@ -107,6 +126,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     text-align: center;
     border: 2px solid var(--nero);
     border-radius: 10px;
@@ -114,19 +134,24 @@
 }
 
 .home  .row-left{
-    text-align: center;
+    text-align: left;
+    position: relative;
+    top: -20px;
 }
 .home .row-left h3{
-   color: var(--green);
+   color: #fff;
    font-weight: 400;
+   font-size: 1.2rem;
    text-transform: uppercase;
+   text-align:left;
 
 }
 .home .row-left h1{
-font-size:2rem;
+font-size:40px;
 font-family: var(--mont);
 text-transform: capitalize;
 line-height: 1.2;
+letter-spacing:1.9px;
 font-weight:900;
 
 }
@@ -160,6 +185,7 @@ font-weight:900;
 
 .home .img-container{
     position: relative;
+    bottom:-90px;
     width: 240px;
     height: 240px;
     border-radius: 50%;
@@ -755,8 +781,10 @@ box-area li:nth-child(6){
         padding: 1rem 1.5rem;
     }
     .home .img-container{
-        width: 320px;
-        height:320px;
+        width: 315px;
+        height:315px;
+        bottom:-13px;
+        right: -5px;
     }
     .home .img-border{
         width:325px;
@@ -846,6 +874,7 @@ box-area li:nth-child(6){
    
 }
 @media screen and (min-width:992px){
+    
     .navbar-toggler{
         display: none;
     }
@@ -860,6 +889,7 @@ box-area li:nth-child(6){
         justify-content: flex-end;
     }
     .navbar-collapse{
+        
         height: 100%;
         flex:1 0 auto;
     }
@@ -868,10 +898,12 @@ box-area li:nth-child(6){
     }
     .nav-item{
         margin-top:0 0.5rem;
-        
+          
     }
     .nav-link{
         font-size :0.8rem;
+        backdrop-filter: none;
+        
     }
      /*home*/
      .home .row{
