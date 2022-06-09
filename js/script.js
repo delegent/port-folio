@@ -16,12 +16,12 @@ window.addEventListener('resize',()=>{
 let img = document.getElementById('home-img');
 img.addEventListener('mouseover',function(){
     
-        img.src = "images/mmm.svg"
+        img.src = "https://bonzonate.co.za/images/2021/02/14/faceman.gif"
     
 })
 img.addEventListener('mouseout',function(){
     
-    img.src = "images/mmm.svg"
+    img.src = "https://bonzonate.co.za/images/2021/02/14/faceman.gif"
 
 })
 //about
