@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400&display=swap');
 #preloader{
-    background:#000000 url('https://i.pinimg.com/originals/bc/56/b3/bc56b31a50e519be2ed335a47e75bc62.gif') no-repeat center center;
+    background:#000000 url('../images/preloader.gif') no-repeat center center;
     background-size:30%;
     width: 100%;
     height: 100vh;
